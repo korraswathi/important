@@ -43,8 +43,167 @@ border-radius: 50%;
             <li class="nav-item ">
               <a class="nav-link" href="validation.html">Contact</a>
             </li>
-           
+            
        
+       <button data-target="#sonu" data-toggle="modal" class="bg-primary border rounded margin-left:5">SignIn</button>
+    <div class="modal" id="sonu">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">          
+
+<button class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                 <div class="modal-body">
+                    <form>
+                        <div class="jumbotron">
+                        <div class="container bg-warning border rounded py-2 w-75 mx-5">
+                           
+                        <div class="form-group">
+                            
+                            <input class="form-control" type="text" placeholder="Enter Username" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group">
+                          <input class="form-control" type="text" placeholder="Enter Mobile No" minlength="10" maxlength="10">
+                      </div>
+                      <div class="form-group">
+                      <label>Gender</label>
+                        <div class="form-check-inline border rounded">
+                            <input  class="form-check-input" type="radio" name="s">
+                            <label  class="form-check-label">Male</label>
+                        </div>
+                  
+                      <div class="form-check-inline border rounded">
+                          <input  class="form-check-input" type="radio" name="s">
+                          <label class="form-check-label">Female</label>
+                      </div>
+                  </div>
+                      <div class="form-group">
+                  <div class="form-check">
+                      <label >DOB</label>
+                  <div class="form-check-inline">
+                          
+                          <select>
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                              <option>06</option>
+                              <option>07</option>
+                              <option>08</option>
+                              <option>09</option>
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                          </select>
+                  </div>
+                  
+                  <div class="form-check-inline">
+                          <select>
+                              <option>Jan</option>
+                              <option>Feb</option>
+                              <option>Mar</option>
+                              <option>Apr</option>
+                              <option>May</option>
+                              <option>Jun</option>
+                              <option>Jul</option>
+                              <option>Aug</option>
+                              <option>Sep</option>
+                              <option>Oct</option>
+                              <option>Nov</option>
+                              <option>Dec</option>
+                          </select>
+                      </div>
+                  </div>
+                  </div>
+                  <div>
+                      <input  class="btn-success btn w-25 px-2 mx-5 mt-3 border rounded" type="submit" value="Sign In">
+                  </div>
+                  </form>
+                
+</ul>
+
+ <button data-target="#abc" data-toggle="modal"class="bg-primary border rounded">SignUp</button>
+    <div class="modal" id="abc">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">          
+<h4>Sign Up<br>
+<i>It's quick and easy.</i></h4>
+<button class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                 <div class="modal-body">
+                    <form novlaidate class="needs-validation" >
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="First name" required>
+                    <small class="invalid-feedback">please enter ur first name</small>
+                        </div>
+                     <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Surname" required>
+                        <small class="invalid-feedback">please enter ur last name</small>
+                    </div>
+                 <div class="form-group">
+                     <input class="form-control" type="text" placeholder="Mobile number or email address" required>
+                     <small class="invalid-feedback">please enter ur mobile number</small> 
+                    </div>
+                     <div class="form-group">
+                         
+                         <input  class="form-control" type="text" placeholder="New Password" required >
+                         <small class="invalid-feedback">please enter ur password</small>
+                     </div>
+                     <div class="form-group" >
+                         <label>Date of Birth</label>
+                         <input class="form-control" type="date">
+                     </div>
+                 <div class="form-group">
+                     <label>Gender</label> 
+                     <div class="form-check">
+                         
+                 <div class="form-check-inline border rounded w-25 p-1">
+                    
+                     <input class="form-check-input " type="radio" name="p1">
+                     <label class="form-check-label mx-5">Male</label>
+                 </div>
+                     
+                 
+                 <div class="form-check-inline border rounded w-25 p-1">
+                     <input  class="form-check-input mx-2" type="radio" name="p1">
+                     <label class="form-check-label mx-4">Female</label>
+                 </div>
+                 
+                 <div class="form-check-inline border rounded w-25 p-1">
+                     <input  class="form-check-input mx-2" type="radio" name="p1">
+                     <label class="form-check-label mx-3">Custom</label>
+                 
+                 </div>
+                 <div class="form-group">
+                     <input  class="btn-success btn w-50 px-3 mx-5 mt-3 border rounded" type="submit" value="Sign Up">
+                 </div>
+                </form>
+                     <div class="modal-footer">
+                        <button class=" btn-primary">close</button>
+                    </div>
+</div>
+                 </div> 
+                
+                 <script>
+                    var f1=document.querySelector('.needs-validation');
+                    f1.addEventListener('submit',function(e){
+            
+                        if(f1.checkValidity()===false){
+                            e.preventDefault();
+                            e.stopPropagation();
+                        }
+                        f1.classList.add('was-validated');
+                    })
+                </script>
+       
+
+
+
         </div>
       </nav>
       <div class="carousel slide" data-ride="carousel" id="sonu"> 
